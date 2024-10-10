@@ -12,11 +12,11 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     the main function
     """
-    def inside(multiplier: float) -> float:
+    def inside(m: float) -> float:
         """
         the inner fynction that is being returned
         """
-        return multiplier**2
+        return multiplier*m
     try:
         return inside
     except TypeError:
