@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 simple module that contains a type-checked function
 >>> floor(3.14)
