@@ -6,6 +6,6 @@ simple module that contains a type-checked function
 """
 
 
-def floor(n: float) -> int:
+def to_str(n: float) -> str:
     """ getting the string repersentation of a float arg (n)"""
     return str(n)
