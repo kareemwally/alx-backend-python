@@ -1,8 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 simple module that contains a type-checked function
->>> add(3.4,5.0)
-8.4
 """
 
 
