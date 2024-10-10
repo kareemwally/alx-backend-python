@@ -8,7 +8,7 @@ summing a list of float & int numbers
 from typing import List, Union, Optional
 
 
-def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """ input_list is a list of float & int numbers
     and the result must be float"""
     try:
