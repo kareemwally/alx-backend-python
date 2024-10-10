@@ -1,2 +1,2 @@
-annotations is great way for better documentations and type clarification
+annotations for better documentations and type clarification.
 for args and variables
