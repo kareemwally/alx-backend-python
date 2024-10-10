@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
 simple module that contains a type-checked function
->>> floor(3.14)
-3
 """
+import math
 
 
 def floor(n: float) -> int:
