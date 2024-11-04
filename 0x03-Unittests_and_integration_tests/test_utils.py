@@ -18,6 +18,9 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2),
         ({"a": {"b": {"c": 3}}}, ("a", "b", "c"), 3),
+        ({}, ("a",), KeyError),
+        ({"a": 1}, ("a", "b"), KeyError),
+        ({"a": {"b": 2}}, ("a", "b", "c"), KeyError),
     ])
     def test_access_nested_map(self,
                                nested_map: Mapping[str, Any],
