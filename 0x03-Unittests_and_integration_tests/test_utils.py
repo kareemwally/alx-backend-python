@@ -5,6 +5,8 @@ unittest.TestCase
 """
 import unittest
 from utils import access_nested_map
+from parameterized import parameterized
+from typing import Mapping, Sequence, Any, Union
 
 
 class TestAccessNestedMap(unittest.TestCase):
@@ -35,8 +37,6 @@ class TestAccessNestedMap(unittest.TestCase):
         else:
             self.assertEqual(access_nested_map(nested_map, path),
                              expected_result)
-        asserting the testcases from @parameterized.expand
-        into function
 
 
 if __name__ == '__main__':
