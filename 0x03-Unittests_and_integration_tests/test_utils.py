@@ -5,7 +5,7 @@ using unittest module
 """
 import unittest
 from parameterized import parameterized
-from typing import Mapping, Sequence, Any, Union
+from typing import Dict, Mapping, Sequence, Any, Union
 from utils import access_nested_map
 
 
@@ -54,7 +54,8 @@ class TestGetJson(unittest.TestCase):
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False}),
     ])
-    def test_get_json(self, test_url, test_payload):
+    def test_get_json(self, test_url: str,
+                      test_payload: Dict[str, bool]) -> None:
         """
         Test that utils.get_json returns expected result and
         requests.get is called once with correct url
